@@ -1,4 +1,4 @@
-# database_experience_ecommerce
+# Modelo eCommerce simplificado
 
 Digital Innovation One 
 Bootcamp: DATABASE EXPERIENCE
