@@ -1,4 +1,4 @@
-# eCommerce_dio.com
+# database_experience_ecommerce
 
 Digital Innovation One 
 Bootcamp: DATABASE EXPERIENCE
