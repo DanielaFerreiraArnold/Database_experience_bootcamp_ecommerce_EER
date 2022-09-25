@@ -41,19 +41,4 @@ o modelo apresentado em curso, acrescentando os seguintes pontos:
 2. Pagamento - Pode ter cadastrado mais de uma forma de pagamento;
 3. Entrega - Possui status e código de rastreio.
 
-  Para o primeiro ponto, foi feita uma especialização da entidade cliente, sendo criadas duas novas entidades (Cliente_J e Cliente_PF), as quais herdam 
-as informações do da entidade Cliente, para não haver repetição de informações como: nome e endereço.
-
-  Para o segundo caso, pagamento, foi criada uma entidade "Formas_pagamento", contendo as seguintes opções de pagamento:
-Pix, boleto e cartão de crédito. Para cartão de crédito, foi criada uma entidade separada, pois esta forma de pagamento possui informações
-específicas. Caso essa forma for selecioanda, a entidade "Formas_pagamento" irá obter as imormações que foram herdadas. 
-Foi criada uma outra entidade, Pedido_has_Formas_pagamento, pois um pedido pode ser pago com mais de uma forma de pagamento, 
-o qual o cliente pode selecionar no fechamento do pedido. Além disso, uma fomra de pagamento não é exclusiva de somente um pedido, 
-por isso existe um relacionamento de N:M.
-
-  Sobre a Entrega, decidi criar uma entidade especializada, a qual é herdada por Pedido, uma vez que o peido é feito.
-Essa entidade contém informações como: confirmação do pedido, data de envio, previsão de entrega, código de rastreamento e transportadora responsável.
-
-  Dentro de pedido, foi acrescentado o atributo "Cancelamento/devolução/troca". Por meio deste atributo, 
-o cliente poderá consultar politicas de cancelamento, devolução e troca e entrar em contato com o vendedor para fazer sua solicitação. 
-Isso será fetio por meio de código, sem necessidade de criar uma outra endidade. 
+ 
